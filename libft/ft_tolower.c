@@ -1,28 +1,36 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalnum.c                                       :+:      :+:    :+:   */
+/*   ft_tolower.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: yaolivei <yaolivei@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/09/13 17:13:47 by yaolivei          #+#    #+#             */
-/*   Updated: 2023/09/13 18:12:02 by yaolivei         ###   ########.fr       */
+/*   Created: 2023/09/13 20:02:30 by yaolivei          #+#    #+#             */
+/*   Updated: 2023/09/13 20:07:08 by yaolivei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
-#include <stdio.h>
 
-int	ft_isalnum(int c)
+int	ft_tolower(int *str)
 {
-	if ((c >= 'A' && c <= 'z') || (c <= '0' && c <= '9'))
-		return (1);
-	else
-		return (0);
-}
+	int	a;
 
-// int	main(void)
-// {
-// 	printf ("%d", ft_isalnum('a'));
-// 	return (0);
-//}
+	a = 0;
+	if (*str == '\0')
+	{
+		return (1);
+	}
+	while (str[a] != '\0')
+	{
+		if (str[a] >= 'a' && str[a] <= 'z')
+		{
+			a++;
+		}
+		else
+		{
+			return (0);
+		}
+	}
+	return (1);
+}

@@ -1,28 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalnum.c                                       :+:      :+:    :+:   */
+/*   ft_isprint.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: yaolivei <yaolivei@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/09/13 17:13:47 by yaolivei          #+#    #+#             */
-/*   Updated: 2023/09/13 18:12:02 by yaolivei         ###   ########.fr       */
+/*   Created: 2023/09/13 18:02:06 by yaolivei          #+#    #+#             */
+/*   Updated: 2023/09/13 18:02:28 by yaolivei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
-#include <stdio.h>
 
-int	ft_isalnum(int c)
+int	ft_isdigit(int c)
 {
-	if ((c >= 'A' && c <= 'z') || (c <= '0' && c <= '9'))
+	if (c >= 32 && c <= 126)
 		return (1);
 	else
 		return (0);
 }
 
-// int	main(void)
+// int main (void)
 // {
-// 	printf ("%d", ft_isalnum('a'));
+// 	ft_isdigit('0');
 // 	return (0);
-//}
+// }
