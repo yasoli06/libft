@@ -1,36 +1,42 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
+/*   ft_memset.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: yaolivei <yaolivei@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/09/13 20:13:13 by yaolivei          #+#    #+#             */
-/*   Updated: 2023/09/13 20:53:18 by yaolivei         ###   ########.fr       */
+/*   Created: 2023/09/14 15:21:42 by yaolivei          #+#    #+#             */
+/*   Updated: 2023/09/16 17:31:49 by yaolivei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <string.h>
+#include <stdio.h>
+#include <stdlib.h>
 
-unsigned int	ft_strlcpy(char *dest, char *src, unsigned int size)
+void	*ft_memset(void *b, int c, size_t len)
 {
-	unsigned int	i;
+	size_t			i;
+	unsigned char	*p;
 
+	p = b;
 	i = 0;
-	if (size == 0)
+	while (i < len)
 	{
-		while (src[i] != '\0')
-			i++;
-		return (i);
-	}
-	while (i < size -1 && src[i] != '\0')
-	{
-		dest[i] = src [i];
+		p[i] = (unsigned char)c;
 		i++;
 	}
-	if (i < size)
-		dest[i] = '\0';
-	while (src[i] != '\0')
-		i++;
-	return (i);
+	return (b);
 }
+
+/*int	main(void)
+{
+	char	array[] = "Hola mundo!" ;
+	int	c  = 50;
+	size_t	len = 9;
+
+	ft_memset (array, c, len);
+	printf ("%s", array);
+	return (0);
+}
+*/

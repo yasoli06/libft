@@ -1,18 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_tolower.c                                       :+:      :+:    :+:   */
+/*   ft_toupper.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: yaolivei <yaolivei@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/09/13 20:02:30 by yaolivei          #+#    #+#             */
-/*   Updated: 2023/09/13 20:07:08 by yaolivei         ###   ########.fr       */
+/*   Created: 2023/09/13 19:43:32 by yaolivei          #+#    #+#             */
+/*   Updated: 2023/09/13 20:58:36 by yaolivei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+#include <stdio.h>
 
-int	ft_tolower(int *str)
+int	ft_toupper(int *str)
 {
 	int	a;
 
@@ -23,7 +23,7 @@ int	ft_tolower(int *str)
 	}
 	while (str[a] != '\0')
 	{
-		if (str[a] >= 'a' && str[a] <= 'z')
+		if (str[a] >= 'A' && str[a] <= 'Z')
 		{
 			a++;
 		}

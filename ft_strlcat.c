@@ -1,36 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_toupper.c                                       :+:      :+:    :+:   */
+/*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: yaolivei <yaolivei@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/09/13 19:43:32 by yaolivei          #+#    #+#             */
-/*   Updated: 2023/09/13 19:53:59 by yaolivei         ###   ########.fr       */
+/*   Created: 2023/09/14 21:06:49 by yaolivei          #+#    #+#             */
+/*   Updated: 2023/09/15 10:59:55 by yaolivei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+#include <string.h>
 
-int	ft_toupper(int *str)
+void	ft_strlcat(char *dst, const char *src, size_t dstsize)
 {
-	int	a;
+	size_t	dst_len;
+	size_t	src_len;
+	size_t	i;
 
-	a = 0;
-	if (*str == '\0')
-	{
-		return (1);
-	}
-	while (str[a] != '\0')
-	{
-		if (str[a] >= 'A' && str[a] <= 'Z')
-		{
-			a++;
-		}
-		else
-		{
-			return (0);
-		}
-	}
-	return (1);
 }
