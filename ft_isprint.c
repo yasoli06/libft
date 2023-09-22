@@ -6,11 +6,11 @@
 /*   By: yaolivei <yaolivei@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/13 18:02:06 by yaolivei          #+#    #+#             */
-/*   Updated: 2023/09/22 13:21:49 by yaolivei         ###   ########.fr       */
+/*   Updated: 2023/09/22 13:30:49 by yaolivei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include "libft.h"
 
 int	ft_isprint(int c)
 {
@@ -20,8 +20,8 @@ int	ft_isprint(int c)
 		return (0);
 }
 
-int	main(void)
+/*int	main(void)
 {
-	ft_isprint('a');
+	ft_isprint(32);
 	return (0);
-}
+}*/

@@ -6,31 +6,25 @@
 /*   By: yaolivei <yaolivei@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/13 19:43:32 by yaolivei          #+#    #+#             */
-/*   Updated: 2023/09/13 20:58:36 by yaolivei         ###   ########.fr       */
+/*   Updated: 2023/09/22 13:45:24 by yaolivei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include "libft.h"
 
-int	ft_toupper(int *str)
+int	ft_toupper(int c)
 {
-	int	a;
-
-	a = 0;
-	if (*str == '\0')
+	if (c >= 'a' && c <= 'z')
 	{
-		return (1);
+		c = c - 32;
+		return (c);
 	}
-	while (str[a] != '\0')
-	{
-		if (str[a] >= 'A' && str[a] <= 'Z')
-		{
-			a++;
-		}
-		else
-		{
-			return (0);
-		}
-	}
-	return (1);
+	else
+		return (c);
 }
+
+/*int	main(void)
+{
+	ft_toupper('a');
+	return (0);
+}*/

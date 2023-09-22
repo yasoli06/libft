@@ -6,13 +6,13 @@
 /*   By: yaolivei <yaolivei@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/19 15:26:13 by yaolivei          #+#    #+#             */
-/*   Updated: 2023/09/19 15:42:57 by yaolivei         ###   ########.fr       */
+/*   Updated: 2023/09/22 15:12:29 by yaolivei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stddef.h>
 
-void	*memcpy(void *dst, const void *src, size_t n)
+void	*ft_memcpy(void *dst, const void *src, size_t n)
 {
 	size_t	i;
 	char	*dst_c;
