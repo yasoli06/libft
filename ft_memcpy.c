@@ -1,22 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlcat.c                                       :+:      :+:    :+:   */
+/*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: yaolivei <yaolivei@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/09/14 21:06:49 by yaolivei          #+#    #+#             */
-/*   Updated: 2023/09/19 15:33:09 by yaolivei         ###   ########.fr       */
+/*   Created: 2023/09/19 15:26:13 by yaolivei          #+#    #+#             */
+/*   Updated: 2023/09/19 15:42:57 by yaolivei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*#include <string.h>
+#include <stddef.h>
 
-void	ft_strlcat(char *dst, const char *src, size_t dstsize)
+void	*memcpy(void *dst, const void *src, size_t n)
 {
-	size_t	dst_len;
-	size_t	src_len;
-	size_t	src_len
 	size_t	i;
+	char	*dst_c;
+	char	*src_c;
 
-}*/
+	i = 0;
+	dst_c = dst;
+	src_c = src;
+	while (i < n)
+	{
+		dst_c[i] = src_c[i];
+		i++;
+	}
+}

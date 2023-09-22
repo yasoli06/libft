@@ -6,7 +6,7 @@
 /*   By: yaolivei <yaolivei@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/14 19:33:14 by yaolivei          #+#    #+#             */
-/*   Updated: 2023/09/14 21:06:18 by yaolivei         ###   ########.fr       */
+/*   Updated: 2023/09/19 15:22:21 by yaolivei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 
 void	ft_bzero(void *s, size_t n)
 {
-	int		a;
+	size_t	a;
 	char	*p;
 
 	p = s;

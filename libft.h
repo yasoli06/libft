@@ -1,22 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlcat.c                                       :+:      :+:    :+:   */
+/*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: yaolivei <yaolivei@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/09/14 21:06:49 by yaolivei          #+#    #+#             */
-/*   Updated: 2023/09/19 15:33:09 by yaolivei         ###   ########.fr       */
+/*   Created: 2023/09/19 14:39:33 by yaolivei          #+#    #+#             */
+/*   Updated: 2023/09/19 15:35:42 by yaolivei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*#include <string.h>
+#ifndef LIBFT_H
 
-void	ft_strlcat(char *dst, const char *src, size_t dstsize)
-{
-	size_t	dst_len;
-	size_t	src_len;
-	size_t	src_len
-	size_t	i;
+# define LIBFT_H
 
-}*/
+# include <stddef.h>
+# include <unistd.h>
+
+#endif
