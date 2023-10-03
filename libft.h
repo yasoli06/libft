@@ -6,7 +6,7 @@
 /*   By: yaolivei <yaolivei@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/19 14:39:33 by yaolivei          #+#    #+#             */
-/*   Updated: 2023/09/25 03:40:49 by yaolivei         ###   ########.fr       */
+/*   Updated: 2023/10/03 15:23:12 by yaolivei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,5 +39,7 @@ char	*ft_strrchr(const char *s, int c);
 int		ft_strncmp(const char *s1, const char *s2, size_t n);
 int		ft_memcmp(const void *s1, const void *s2, size_t n);
 size_t	ft_strlcat(char *dst, const char *src, size_t dstsize);
+int		ft_atoi(const char *str);
+char	*ft_strnstr(const char *haystack, const char *needle, size_t len);
 
 #endif
