@@ -6,7 +6,7 @@
 /*   By: yaolivei <yaolivei@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/25 02:09:21 by yaolivei          #+#    #+#             */
-/*   Updated: 2023/09/25 02:14:59 by yaolivei         ###   ########.fr       */
+/*   Updated: 2023/10/04 16:35:37 by yaolivei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,3 +29,14 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	}
 	return (0);
 }
+
+/*int	main(void)
+{
+	char str1[] = "1234567890";
+	char str2[] = "1234567890";
+	int a;
+
+	a = ft_memcmp(str1, str2, 10);
+	printf("%d\n", a);
+	return (0);
+}*/

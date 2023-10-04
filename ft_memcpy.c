@@ -6,7 +6,7 @@
 /*   By: yaolivei <yaolivei@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/19 15:26:13 by yaolivei          #+#    #+#             */
-/*   Updated: 2023/09/24 21:15:11 by yaolivei         ###   ########.fr       */
+/*   Updated: 2023/10/04 16:35:53 by yaolivei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,3 +30,17 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 	}
 	return (dst);
 }
+
+/*int	main(void)
+{
+	char str[] = "1234567890";
+	char str2[] = "1234567890";
+	char *ptr;
+	char *ptr2;
+
+	ptr = ft_memcpy(str, str2, 5);
+	ptr2 = memcpy(str, str2, 5);
+	printf("%s\n", ptr);
+	printf("%s\n", ptr2);
+	return (0);
+}*/

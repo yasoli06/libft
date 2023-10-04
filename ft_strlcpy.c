@@ -6,7 +6,7 @@
 /*   By: yaolivei <yaolivei@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/13 20:13:13 by yaolivei          #+#    #+#             */
-/*   Updated: 2023/09/13 20:58:31 by yaolivei         ###   ########.fr       */
+/*   Updated: 2023/10/04 16:37:01 by yaolivei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,3 +34,18 @@ unsigned int	ft_strlcpy(char *dest, char *src, unsigned int size)
 		i++;
 	return (i);
 }
+/*
+int main(void)
+{
+	char str[] = "1234567890";
+	char str2[] = "1234567890";
+	unsigned int a;
+	unsigned int b;
+
+	a = ft_strlcpy(str, str2, 5);
+	b = strlcpy(str, str2, 5);
+	printf("%d\n", a);
+	printf("%d\n", b);
+	return (0);
+}
+*/

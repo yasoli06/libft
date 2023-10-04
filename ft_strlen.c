@@ -6,7 +6,7 @@
 /*   By: yaolivei <yaolivei@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/13 19:28:54 by yaolivei          #+#    #+#             */
-/*   Updated: 2023/09/13 19:35:45 by yaolivei         ###   ########.fr       */
+/*   Updated: 2023/10/04 16:37:22 by yaolivei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,3 +23,14 @@ int	ft_strlen(char *str)
 	}
 	return (cont);
 }
+
+/*int main (void)
+{
+	char str[] = "1234567890";
+	int a;
+
+	a = ft_strlen(str);
+	printf("%d\n", a);
+	return (0);
+}
+*/

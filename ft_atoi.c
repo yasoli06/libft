@@ -6,7 +6,7 @@
 /*   By: yaolivei <yaolivei@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/03 13:14:33 by yaolivei          #+#    #+#             */
-/*   Updated: 2023/10/03 15:21:09 by yaolivei         ###   ########.fr       */
+/*   Updated: 2023/10/04 16:34:43 by yaolivei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,3 +39,13 @@ int	ft_atoi(const char *str)
 	}
 	return (a * sign);
 }
+
+/*int	main(void)
+{
+	char	str[] = "   -1234567890";
+	int		a;
+
+	a = ft_atoi(str);
+	printf("%d\n", a);
+	return (0);
+}*/

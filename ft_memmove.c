@@ -6,7 +6,7 @@
 /*   By: yaolivei <yaolivei@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/19 15:45:50 by yaolivei          #+#    #+#             */
-/*   Updated: 2023/09/24 20:35:19 by yaolivei         ###   ########.fr       */
+/*   Updated: 2023/10/04 16:36:27 by yaolivei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,11 +40,14 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 
 /*int main(void)
 {
-char str1[] = "memmove can be very useful......";
-char str2[] = "memmove can be very useful......";
+	char str[] = "1234567890";
+	char str2[] = "1234567890";
+	char *ptr;
+	char *ptr2;
 
-printf("Before memmove dest = %s, src = %s\n", str1, str1 + 4);
-ft_memmove(str1, str1 + 4, 10);
-return (0);
-
+	ptr = ft_memmove(str, str2, 5);
+	ptr2 = memmove(str, str2, 5);
+	printf("%s\n", ptr);
+	printf("%s\n", ptr2);
+	return (0);
 }*/

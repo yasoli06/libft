@@ -6,7 +6,7 @@
 /*   By: yaolivei <yaolivei@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/25 01:12:36 by yaolivei          #+#    #+#             */
-/*   Updated: 2023/10/04 15:30:00 by yaolivei         ###   ########.fr       */
+/*   Updated: 2023/10/04 16:38:43 by yaolivei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,3 +27,13 @@ char	*ft_strrchr(const char *s, int c)
 		return ((char *)*s);
 	return (NULL);
 }
+/*int main
+{
+	char str[] = "1234567890";
+	char *ptr;
+
+	ptr = ft_strrchr(str, '5');
+	printf("%s\n", ptr);
+	return (0);
+}
+*/
