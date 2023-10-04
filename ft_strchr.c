@@ -6,7 +6,7 @@
 /*   By: yaolivei <yaolivei@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/24 21:36:18 by yaolivei          #+#    #+#             */
-/*   Updated: 2023/09/25 00:18:21 by yaolivei         ###   ########.fr       */
+/*   Updated: 2023/10/04 13:30:10 by yaolivei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,9 +32,9 @@ char	*ft_strchr(const char *s, int c)
     char *result = strchr(str, 'W');
 
     if (result != NULL) {
-        printf("Character found: %c\n", *result);
+        printf("Caracter encontrado: %c\n", *result);
     } else {
-        printf("Character not found.\n");
+        printf("Caracter no encontrado.\n");
     }
 
     return 0;
