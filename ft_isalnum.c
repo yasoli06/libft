@@ -6,16 +6,15 @@
 /*   By: yaolivei <yaolivei@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/13 17:13:47 by yaolivei          #+#    #+#             */
-/*   Updated: 2023/09/13 18:12:02 by yaolivei         ###   ########.fr       */
+/*   Updated: 2023/10/06 15:41:23 by yaolivei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-#include <stdio.h>
+#include "libft.h"
 
 int	ft_isalnum(int c)
 {
-	if ((c >= 'A' && c <= 'z') || (c <= '0' && c <= '9'))
+	if (ft_isalpha(c) || ft_isdigit(c))
 		return (1);
 	else
 		return (0);

@@ -6,11 +6,11 @@
 /*   By: yaolivei <yaolivei@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/13 15:49:52 by yaolivei          #+#    #+#             */
-/*   Updated: 2023/09/22 13:07:50 by yaolivei         ###   ########.fr       */
+/*   Updated: 2023/10/06 15:41:34 by yaolivei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+#include "libft.h"
 
 int	ft_isalpha(int c)
 {

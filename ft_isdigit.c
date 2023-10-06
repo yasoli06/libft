@@ -6,11 +6,11 @@
 /*   By: yaolivei <yaolivei@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/13 16:43:28 by yaolivei          #+#    #+#             */
-/*   Updated: 2023/09/13 18:02:40 by yaolivei         ###   ########.fr       */
+/*   Updated: 2023/10/06 15:42:08 by yaolivei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+#include "libft.h"
 
 int	ft_isdigit(int c)
 {

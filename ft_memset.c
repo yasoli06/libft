@@ -6,13 +6,11 @@
 /*   By: yaolivei <yaolivei@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/14 15:21:42 by yaolivei          #+#    #+#             */
-/*   Updated: 2023/09/16 17:31:49 by yaolivei         ###   ########.fr       */
+/*   Updated: 2023/10/06 15:43:24 by yaolivei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
-#include <stdio.h>
-#include <stdlib.h>
+#include "libft.h"
 
 void	*ft_memset(void *b, int c, size_t len)
 {

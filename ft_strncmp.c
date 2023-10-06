@@ -6,7 +6,7 @@
 /*   By: yaolivei <yaolivei@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/25 01:41:56 by yaolivei          #+#    #+#             */
-/*   Updated: 2023/09/25 02:19:34 by yaolivei         ###   ########.fr       */
+/*   Updated: 2023/10/06 21:49:59 by yaolivei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 	a = s1;
 	b = s2;
 	i = 0;
-	while (a[i] != '\0' && b[i] != '\0' && i < n)
+	while (i < n && a[i] != '\0' && b[i] != '\0')
 	{
 		if (a[i] != b[i])
 		{

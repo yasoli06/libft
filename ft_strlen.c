@@ -6,18 +6,18 @@
 /*   By: yaolivei <yaolivei@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/13 19:28:54 by yaolivei          #+#    #+#             */
-/*   Updated: 2023/10/04 16:37:22 by yaolivei         ###   ########.fr       */
+/*   Updated: 2023/10/06 15:56:34 by yaolivei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+#include "libft.h"
 
-int	ft_strlen(char *str)
+size_t	ft_strlen(const char *s)
 {
 	int	cont;
 
 	cont = 0;
-	while (str[cont] != '\0')
+	while (s[cont] != '\0')
 	{
 		cont++;
 	}

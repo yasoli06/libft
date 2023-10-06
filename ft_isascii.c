@@ -6,11 +6,11 @@
 /*   By: yaolivei <yaolivei@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/13 17:16:03 by yaolivei          #+#    #+#             */
-/*   Updated: 2023/09/13 17:51:47 by yaolivei         ###   ########.fr       */
+/*   Updated: 2023/10/06 15:41:48 by yaolivei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+#include "libft.h"
 
 int	ft_isascii(int c)
 {

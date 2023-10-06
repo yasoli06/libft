@@ -6,7 +6,7 @@
 /*   By: yaolivei <yaolivei@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/25 01:12:36 by yaolivei          #+#    #+#             */
-/*   Updated: 2023/10/04 16:38:43 by yaolivei         ###   ########.fr       */
+/*   Updated: 2023/10/06 15:56:39 by yaolivei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,12 +19,12 @@ char	*ft_strrchr(const char *s, int c)
 	len = ft_strlen(s);
 	while (len >= 0)
 	{
-		if (s[len] == (char)c)
+		if (s[len] == (unsigned char)c)
 			return ((char *)&s[len]);
 		len--;
 	}
 	if (!c)
-		return ((char *)*s);
+		return ((char *)s);
 	return (NULL);
 }
 /*int main
