@@ -6,7 +6,7 @@
 /*   By: yaolivei <yaolivei@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/06 02:30:04 by yaolivei          #+#    #+#             */
-/*   Updated: 2023/10/06 23:24:15 by yaolivei         ###   ########.fr       */
+/*   Updated: 2023/10/09 21:59:53 by yaolivei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,7 @@ char	*ft_strtrim(char const *s1, char const *set)
 	end = ft_strlen(s1);
 	while (end > start && ft_aux(s1[end -1], set))
 		end--;
-	str = ft_substr(s1, start, end);
+	str = ft_substr(s1, start, end - start);
 	if (!str)
 		return (NULL);
 	ft_strlcpy(str, (s1 + start), end - start + 1);
