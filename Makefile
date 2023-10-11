@@ -10,17 +10,20 @@ SRC = ft_bzero.c ft_isalnum.c ft_isalpha.c ft_isascii.c ft_isdigit.c \
 
 OBJECTS = $(SRC:%.c=%.o)
 
-INCLUDES = 	libft.h
-
+HEADER = 	libft.h
+cc = gcc
+FLAGS = -Wall -Wextra -Werror
 RM = rm -f
 
+#metodo implicito
+%.o:%.c 	$(HEADER) Makefile
+			$(CC) $(FLAGS) -c $< -o $@
+
+#mis metodos
 all: $(NAME)
 
 $(NAME): $(OBJECTS)
 	ar rcs $(NAME) $(OBJECTS)
-
-cc = gcc
-FLAGS = -Wall -Wextra -Werror
 
 clean:
 	$(RM) $(OBJECTS) 
