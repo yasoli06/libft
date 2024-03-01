@@ -6,7 +6,7 @@
 /*   By: yaolivei <yaolivei@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/24 23:39:15 by yaolivei          #+#    #+#             */
-/*   Updated: 2023/10/06 22:53:32 by yaolivei         ###   ########.fr       */
+/*   Updated: 2024/02/29 16:10:17 by yaolivei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	*ft_memchr(const void *s, int c, size_t n)
 {
-	unsigned char		*ptr;
+	const char		*ptr;
 	size_t				i;
 	unsigned char		d;
 

@@ -6,16 +6,12 @@
 /*   By: yaolivei <yaolivei@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/06 02:37:05 by yaolivei          #+#    #+#             */
-/*   Updated: 2023/10/07 18:57:10 by yaolivei         ###   ########.fr       */
+/*   Updated: 2024/02/29 15:54:33 by yaolivei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-// "hola que       tal" -> 3
-// " hola que tal" -> 3
-// "hola que tal " -> 3
-// "        "   ' ' -> 0
-// "" ' ' -> 0
+
 static size_t	ft_count_words(char const *s, char c)
 {
 	int	i;

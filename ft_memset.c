@@ -6,7 +6,7 @@
 /*   By: yaolivei <yaolivei@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/14 15:21:42 by yaolivei          #+#    #+#             */
-/*   Updated: 2023/10/06 15:43:24 by yaolivei         ###   ########.fr       */
+/*   Updated: 2024/02/29 16:05:27 by yaolivei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ void	*ft_memset(void *b, int c, size_t len)
 	size_t			i;
 	unsigned char	*p;
 
-	p = (unsigned char)b;
+	p = b;
 	i = 0;
 	while (i < len)
 	{
@@ -36,5 +36,5 @@ void	*ft_memset(void *b, int c, size_t len)
 	ft_memset (array, c, len);
 	printf ("%s", array);
 	return (0);
-}
-*/
+}*/
+
